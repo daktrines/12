@@ -87,7 +87,17 @@
                 </Grid>
             </TabItem>
         </TabControl>
-        <Menu HorizontalAlignment="Left" Height="27" VerticalAlignment="Top" Width="229" Margin="0,5,0,0" Background="#FFDAA9A9"/>
+        <Menu HorizontalAlignment="Left" Height="20" VerticalAlignment="Top" Width="215" Background="#FFDAA9A9" Margin="15,10,0,0">
+            <MenuItem Header="Команды" >
+                <MenuItem Header="Расчитать периметр" Click="P_Click"/>
+                <MenuItem Header="Расчитать площадь" Click="S_Click" />
+                <Separator></Separator>
+                <MenuItem Header="Найти последнюю цифру" Click="Edinica_Click"/>
+                <MenuItem Header="Найти Среднюю цифру" Click="Desyatki_Click"/>
+            </MenuItem>
+            <MenuItem Header="О программе" Click="Инфо_Click" Focusable="False" Height="20"/>
+            <MenuItem Header="Выход" Click="Выход_Click" Focusable="False"/>
+        </Menu>
         <StatusBar HorizontalAlignment="Left" Height="28" Margin="10,201,-3,0" VerticalAlignment="Top" Width="228" Grid.Row="1" Background="#FFDAA9A9">
             <TextBlock TextWrapping="Wrap" VerticalAlignment="Top" Text="Вариант №1" Width="80" TextAlignment="Center"/>
             <Separator></Separator>

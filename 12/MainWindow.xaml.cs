@@ -26,7 +26,7 @@ namespace _12
             InitializeComponent();
         }
 
-        DispatcherTimer _timer;
+        DispatcherTimer _timer;// Описываем таймер
 
         private void P_Click(object sender, RoutedEventArgs e)
         {
@@ -79,17 +79,19 @@ namespace _12
         }
         private void Windows_Loaded(object sender, RoutedEventArgs e)
         {
+            //Добавляем таймер
             _timer = new DispatcherTimer();
             _timer.Tick += Timer_Tick;
             _timer.Interval = new TimeSpan(0, 0, 0, 1, 0);
             _timer.IsEnabled = true;
         }
 
+        //Создаем вручную событие таймера
         private void Timer_Tick(object sender, EventArgs e)
         {
-            DateTime d = DateTime.Now;
-            time.Text = d.ToString("HH:mm");
-            date.Text = d.ToString("dd.MM.yyyy");
+            DateTime d = DateTime.Now;//Создание обьекта
+            time.Text = d.ToString("HH:mm");//Время
+            date.Text = d.ToString("dd.MM.yyyy");//Дата
         }
 
         private void Выход_Click(object sender, RoutedEventArgs e)

@@ -22,6 +22,14 @@
                         <GradientStop Color="#FFDAA9A9" Offset="1"/>
                     </LinearGradientBrush>
                 </TabItem.Background>
+                <TabItem.ContextMenu>
+                        <ContextMenu>
+                            <MenuItem  Header="Расчитать периметр" Icon="1" Click="P_Click"/>
+                        <MenuItem  Header="Расчитать площадь" Icon="2" Click="S_Click"/>
+                        <Separator></Separator>
+                        <MenuItem  Header="Сброс" Icon="3" Click="Сброс1_Click"/>
+                        </ContextMenu>
+                </TabItem.ContextMenu>
                 <Grid Background="#FFDAA9A9" Margin="0,0,1,0">
                     <GroupBox Header="Исходные данные" HorizontalAlignment="Left" Height="134" Margin="10,10,0,0" VerticalAlignment="Top" Width="198">
                         <Grid >
@@ -48,6 +56,14 @@
                         <GradientStop Color="#FFDAA9A9" Offset="1"/>
                     </LinearGradientBrush>
                 </TabItem.Background>
+                <TabItem.ContextMenu>
+                    <ContextMenu>
+                        <MenuItem  Header="Найи последнюю цифру" Icon="1" Click="Edinica_Click"/>
+                        <MenuItem  Header="Найти среднюю цифру" Icon="2" Click="Desyatki_Click"/>
+                        <Separator></Separator>
+                        <MenuItem  Header="Сброс" Icon="3" Click="Сброс2_Click"/>
+                    </ContextMenu>
+                </TabItem.ContextMenu>
                 <Grid Background="#FFDAA9A9">
                     <GroupBox Header="Исходные данные" HorizontalAlignment="Left" Height="134" Margin="10,10,0,0" VerticalAlignment="Top" Width="199">
                         <Grid >
@@ -89,11 +105,11 @@
         </TabControl>
         <Menu HorizontalAlignment="Left" Height="20" VerticalAlignment="Top" Width="215" Background="#FFDAA9A9" Margin="15,10,0,0">
             <MenuItem Header="Команды" >
-                <MenuItem Header="Расчитать периметр" Click="P_Click"/>
-                <MenuItem Header="Расчитать площадь" Click="S_Click" />
+                <MenuItem Header="Расчитать периметр" Icon="1" Click="P_Click"/>
+                <MenuItem Header="Расчитать площадь" Icon="2" Click="S_Click" />
                 <Separator></Separator>
-                <MenuItem Header="Найти последнюю цифру" Click="Edinica_Click"/>
-                <MenuItem Header="Найти Среднюю цифру" Click="Desyatki_Click"/>
+                <MenuItem Header="Найти последнюю цифру" Icon="3" Click="Edinica_Click"/>
+                <MenuItem Header="Найти Среднюю цифру" Icon="4" Click="Desyatki_Click"/>
             </MenuItem>
             <MenuItem Header="О программе" Click="Инфо_Click" Focusable="False" Height="20"/>
             <MenuItem Header="Выход" Click="Выход_Click" Focusable="False"/>

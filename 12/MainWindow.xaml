@@ -20,7 +20,7 @@
                     <GroupBox Header="Исходные данные" HorizontalAlignment="Left" Height="134" Margin="10,10,0,0" VerticalAlignment="Top" Width="192">
                         <Grid >
                             <Label Content="Сторона квадрата" HorizontalAlignment="Left" Margin="10,20,0,0" VerticalAlignment="Top" Width="124"/>
-                            <TextBox x:Name="Zn1" HorizontalAlignment="Left" Height="23" Margin="10,51,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="160"/>
+                            <TextBox x:Name="Zn1" HorizontalAlignment="Left" Height="23" Margin="10,51,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="160" TextChanged="Zn1_TextChanged"/>
                         </Grid>
                     </GroupBox>
                     <GroupBox Header="Результат" HorizontalAlignment="Left" Height="174" Margin="10,149,0,0" VerticalAlignment="Top" Width="192">
@@ -29,7 +29,7 @@
                             <Button Content="Расчитать S" HorizontalAlignment="Left" Margin="10,89,0,0" VerticalAlignment="Top" Width="160" Click="S_Click"/>
                             <TextBox x:Name="P" IsReadOnly="True" HorizontalAlignment="Left" Height="23" Margin="10,35,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="160"/>
                             <TextBox x:Name="S" IsReadOnly="True" HorizontalAlignment="Left" Height="23" Margin="10,114,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="160"/>
-                            <Button Content="↺" HorizontalAlignment="Left" Margin="63,63,0,0" VerticalAlignment="Top" Width="48" Height="21"/>
+                            <Button Content="↺" HorizontalAlignment="Left" Margin="63,63,0,0" VerticalAlignment="Top" Width="48" Height="21" Click="Сброс1_Click"/>
 
                         </Grid>
                     </GroupBox>
@@ -40,7 +40,7 @@
                     <GroupBox Header="Исходные данные" HorizontalAlignment="Left" Height="134" Margin="10,10,0,0" VerticalAlignment="Top" Width="192">
                         <Grid >
                             <Label Content="Трехзначное число" HorizontalAlignment="Left" Margin="10,20,0,0" VerticalAlignment="Top" Width="124"/>
-                            <TextBox x:Name="Zn2" HorizontalAlignment="Left" Height="23" Margin="10,51,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="160"/>
+                            <TextBox x:Name="Zn2" HorizontalAlignment="Left" Height="23" Margin="10,51,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="160" TextChanged="Zn2_TextChanged"/>
                         </Grid>
                     </GroupBox>
                     <GroupBox Header="Результат" HorizontalAlignment="Left" Height="174" Margin="10,149,0,0" VerticalAlignment="Top" Width="192">
@@ -49,7 +49,7 @@
                             <Button Content="Средняя цифра" HorizontalAlignment="Left" Margin="10,89,0,0" VerticalAlignment="Top" Width="160" Click="Desyatki_Click"/>
                             <TextBox x:Name="Edinica" IsReadOnly="True" HorizontalAlignment="Left" Height="23" Margin="10,35,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="160"/>
                             <TextBox x:Name="Desyatki" IsReadOnly="True" HorizontalAlignment="Left" Height="23" Margin="10,114,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="160"/>
-                            <Button Content="↺" HorizontalAlignment="Left" Margin="63,63,0,0" VerticalAlignment="Top" Width="48" Height="21"/>
+                            <Button Content="↺" HorizontalAlignment="Left" Margin="63,63,0,0" VerticalAlignment="Top" Width="48" Height="21" Click="Сброс2_Click"/>
                         </Grid>
                     </GroupBox>
                 </Grid>
@@ -58,7 +58,7 @@
                 <Grid Background="#FFE5E5E5">
                     <GroupBox Header="Информация" HorizontalAlignment="Left" Height="200" VerticalAlignment="Top" Width="199" Margin="10,66,0,0">
                         <Grid>
-                            <Button Content="Сброс↺" HorizontalAlignment="Left" Margin="10,25,0,0" VerticalAlignment="Top" Width="167" Height="35" Click="Сброс_Click"/>
+                            <Button Content="Сброс" HorizontalAlignment="Left" Margin="10,25,0,0" VerticalAlignment="Top" Width="167" Height="35" Click="Сброс_Click"/>
                             <Button Content="О программе" HorizontalAlignment="Left" Margin="10,65,0,0" VerticalAlignment="Top" Width="167" Height="35" Click="Инфо_Click"/>
                             <Button Content="Выход" HorizontalAlignment="Left" Margin="10,105,0,0" VerticalAlignment="Top" Width="167" Height="35" Click="Выход_Click"/>
 

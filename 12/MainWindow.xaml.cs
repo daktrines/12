@@ -117,6 +117,34 @@ namespace _12
                 "\n2)Дано трехзначное число.Вывести вначале его последнюю цифру(единицы), а" +
                 "затем — его среднюю цифру(десятки)." , Title, MessageBoxButton.OK, MessageBoxImage.Information);
         }
+
+        private void Сброс1_Click(object sender, RoutedEventArgs e)
+        {
+            Zn1.Focus();
+            Zn1.Clear();
+            P.Clear();
+            S.Clear();
+        }
+
+        private void Сброс2_Click(object sender, RoutedEventArgs e)
+        {
+            Zn2.Focus();
+            Zn2.Clear();
+            Edinica.Clear();
+            Desyatki.Clear();
+        }
+
+        private void Zn1_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            P.Clear();
+            S.Clear();
+        }
+
+        private void Zn2_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            Edinica.Clear();
+            Desyatki.Clear();
+        }
     }
     
 }

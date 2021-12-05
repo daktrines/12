@@ -96,7 +96,11 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="burger_fast_food_icon_181517.ico" />
+    <Resource Include="square256_25198.ico" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="Icon\kisspng-reset-button-computer-icons-clip-art-restart-5ac21cc64ba2c3.4782032315226707903098.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

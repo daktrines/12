@@ -37,7 +37,7 @@ namespace _12
                 Rez.P(a, out rez);
                 P.Text = Convert.ToString(rez);
             }
-            else MessageBox.Show("Неверные данные!", "Ошибка");
+            else MessageBox.Show("Неверные данные!", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
         }
 
         private void S_Click(object sender, RoutedEventArgs e)
@@ -49,7 +49,7 @@ namespace _12
                 Rez.S(a, out rez);
                 S.Text = Convert.ToString(rez);
             }
-            else MessageBox.Show("Неверные данные!", "Ошибка");
+            else MessageBox.Show("Неверные данные!", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
         }
     
 
@@ -62,7 +62,7 @@ namespace _12
                 Rez.Edinica(a, out rez);
                 Edinica.Text = Convert.ToString(rez);
             }
-            else MessageBox.Show("Неверные данные!", "Ошибка");
+            else MessageBox.Show("Неверные данные!", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
         }
     
 
@@ -75,7 +75,7 @@ namespace _12
                 Rez.Desyatki(a, out rez);
                 Desyatki.Text = Convert.ToString(rez);
             }
-            else MessageBox.Show("Неверные данные!", "Ошибка");
+            else MessageBox.Show("Неверные данные!", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
         }
         private void Windows_Loaded(object sender, RoutedEventArgs e)
         {
@@ -90,6 +90,32 @@ namespace _12
             DateTime d = DateTime.Now;
             time.Text = d.ToString("HH:mm");
             date.Text = d.ToString("dd.MM.yyyy");
+        }
+
+        private void Выход_Click(object sender, RoutedEventArgs e)
+        {
+            Close();
+        }
+
+        private void Сброс_Click(object sender, RoutedEventArgs e)
+        {
+            Zn1.Focus();
+            Zn2.Focus();
+            Zn1.Clear();
+            Zn2.Clear();
+            P.Clear();
+            S.Clear();
+            Edinica.Clear();
+            Desyatki.Clear();
+        }
+
+        private void Инфо_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Калион Екатерина, 12 пр," +
+                "\nРеализовать расчет задачи:" +
+                "\n1)Дана сторона квадрата a.Найти его площадь и периметр." +
+                "\n2)Дано трехзначное число.Вывести вначале его последнюю цифру(единицы), а" +
+                "затем — его среднюю цифру(десятки)." , Title, MessageBoxButton.OK, MessageBoxImage.Information);
         }
     }
     

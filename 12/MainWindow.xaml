@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:_12"
         mc:Ignorable="d"  Loaded="Windows_Loaded"
-        Title="12" Height="450" Width="249" ResizeMode="CanMinimize" Icon="square256_25198.ico">
+        Title="12" Height="450" Width="249" ResizeMode="CanMinimize" Icon="square256_25198.ico" Background="#FFDAA9A9">
     <Grid HorizontalAlignment="Right" Width="235" Height="421" VerticalAlignment="Bottom" Margin="0,0,4,0">
         <Grid.RowDefinitions>
             <RowDefinition Height="96*"/>
@@ -16,59 +16,79 @@
         </Grid.ColumnDefinitions>
         <TabControl HorizontalAlignment="Left" Height="362" VerticalAlignment="Top" Width="225" Margin="10,32,0,0" Grid.RowSpan="2">
             <TabItem Header="Задача 1">
-                <Grid Background="#FFE5E5E5" Margin="0,0,1,0">
-                    <GroupBox Header="Исходные данные" HorizontalAlignment="Left" Height="134" Margin="10,10,0,0" VerticalAlignment="Top" Width="192">
+                <TabItem.Background>
+                    <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                        <GradientStop Color="#FFF0F0F0" Offset="0"/>
+                        <GradientStop Color="#FFDAA9A9" Offset="1"/>
+                    </LinearGradientBrush>
+                </TabItem.Background>
+                <Grid Background="#FFDAA9A9" Margin="0,0,1,0">
+                    <GroupBox Header="Исходные данные" HorizontalAlignment="Left" Height="134" Margin="10,10,0,0" VerticalAlignment="Top" Width="198">
                         <Grid >
                             <Label Content="Сторона квадрата" HorizontalAlignment="Left" Margin="10,20,0,0" VerticalAlignment="Top" Width="124"/>
-                            <TextBox x:Name="Zn1" HorizontalAlignment="Left" Height="23" Margin="10,51,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="160" TextChanged="Zn1_TextChanged"/>
+                            <TextBox x:Name="Zn1" HorizontalAlignment="Left" Height="23" Margin="10,51,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="166" TextChanged="Zn1_TextChanged"/>
                         </Grid>
                     </GroupBox>
-                    <GroupBox Header="Результат" HorizontalAlignment="Left" Height="174" Margin="10,149,0,0" VerticalAlignment="Top" Width="192">
+                    <GroupBox Header="Результат" HorizontalAlignment="Left" Height="174" Margin="10,149,0,0" VerticalAlignment="Top" Width="198">
                         <Grid >
-                            <Button Content="Расчитать P" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="160" Click="P_Click"/>
-                            <Button Content="Расчитать S" HorizontalAlignment="Left" Margin="10,89,0,0" VerticalAlignment="Top" Width="160" Click="S_Click"/>
-                            <TextBox x:Name="P" IsReadOnly="True" HorizontalAlignment="Left" Height="23" Margin="10,35,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="160"/>
-                            <TextBox x:Name="S" IsReadOnly="True" HorizontalAlignment="Left" Height="23" Margin="10,114,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="160"/>
-                            <Button Content="↺" HorizontalAlignment="Left" Margin="63,63,0,0" VerticalAlignment="Top" Width="48" Height="21" Click="Сброс1_Click"/>
+                            <Button Content="Расчитать P" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="166" Click="P_Click" Background="#FFFFD9D9"/>
+                            <Button Content="Расчитать S" HorizontalAlignment="Left" Margin="10,89,0,0" VerticalAlignment="Top" Width="166" Click="S_Click" Background="#FFFFD9D9"/>
+                            <TextBox x:Name="P" IsReadOnly="True" HorizontalAlignment="Left" Height="23" Margin="10,35,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="166"/>
+                            <TextBox x:Name="S" IsReadOnly="True" HorizontalAlignment="Left" Height="23" Margin="10,114,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="166"/>
+                            <Button Content="↺" HorizontalAlignment="Left" Margin="65,63,0,0" VerticalAlignment="Top" Width="55" Height="21" Click="Сброс1_Click" Background="#FFFFD9D9"/>
 
                         </Grid>
                     </GroupBox>
                 </Grid>
             </TabItem>
             <TabItem Header="Задача 2">
-                <Grid Background="#FFE5E5E5">
-                    <GroupBox Header="Исходные данные" HorizontalAlignment="Left" Height="134" Margin="10,10,0,0" VerticalAlignment="Top" Width="192">
+                <TabItem.Background>
+                    <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                        <GradientStop Color="#FFF0F0F0" Offset="0"/>
+                        <GradientStop Color="#FFDAA9A9" Offset="1"/>
+                    </LinearGradientBrush>
+                </TabItem.Background>
+                <Grid Background="#FFDAA9A9">
+                    <GroupBox Header="Исходные данные" HorizontalAlignment="Left" Height="134" Margin="10,10,0,0" VerticalAlignment="Top" Width="199">
                         <Grid >
                             <Label Content="Трехзначное число" HorizontalAlignment="Left" Margin="10,20,0,0" VerticalAlignment="Top" Width="124"/>
-                            <TextBox x:Name="Zn2" HorizontalAlignment="Left" Height="23" Margin="10,51,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="160" TextChanged="Zn2_TextChanged"/>
+                            <TextBox x:Name="Zn2" HorizontalAlignment="Left" Height="23" Margin="10,51,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="167" TextChanged="Zn2_TextChanged"/>
                         </Grid>
                     </GroupBox>
-                    <GroupBox Header="Результат" HorizontalAlignment="Left" Height="174" Margin="10,149,0,0" VerticalAlignment="Top" Width="192">
+                    <GroupBox Header="Результат" HorizontalAlignment="Left" Height="174" Margin="10,149,0,0" VerticalAlignment="Top" Width="199">
                         <Grid >
-                            <Button Content="Последняя цифра" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="160" Click="Edinica_Click"/>
-                            <Button Content="Средняя цифра" HorizontalAlignment="Left" Margin="10,89,0,0" VerticalAlignment="Top" Width="160" Click="Desyatki_Click"/>
-                            <TextBox x:Name="Edinica" IsReadOnly="True" HorizontalAlignment="Left" Height="23" Margin="10,35,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="160"/>
-                            <TextBox x:Name="Desyatki" IsReadOnly="True" HorizontalAlignment="Left" Height="23" Margin="10,114,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="160"/>
-                            <Button Content="↺" HorizontalAlignment="Left" Margin="63,63,0,0" VerticalAlignment="Top" Width="48" Height="21" Click="Сброс2_Click"/>
+                            <Button Content="Последняя цифра" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="167" Click="Edinica_Click" Background="#FFFFD9D9"/>
+                            <Button Content="Средняя цифра" HorizontalAlignment="Left" Margin="10,89,0,0" VerticalAlignment="Top" Width="167" Click="Desyatki_Click" Background="#FFFFD9D9"/>
+                            <TextBox x:Name="Edinica" IsReadOnly="True" HorizontalAlignment="Left" Height="23" Margin="10,35,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="167"/>
+                            <TextBox x:Name="Desyatki" IsReadOnly="True" HorizontalAlignment="Left" Height="23" Margin="10,114,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="167"/>
+                            <Button Content="↺" HorizontalAlignment="Left" Margin="69,63,0,0" VerticalAlignment="Top" Width="55" Height="21" Click="Сброс2_Click" Background="#FFFFD9D9"/>
                         </Grid>
                     </GroupBox>
                 </Grid>
             </TabItem>
             <TabItem Header="Другое">
-                <Grid Background="#FFE5E5E5">
+                <TabItem.Background>
+                    <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                        <GradientStop Color="#FFF0F0F0" Offset="0"/>
+                        <GradientStop Color="#FFDAA9A9" Offset="1"/>
+                        <GradientStop Color="#FFE6D2D2" Offset="0.539"/>
+                        <GradientStop Color="#FFDAA9A9" Offset="0.552"/>
+                    </LinearGradientBrush>
+                </TabItem.Background>
+                <Grid Background="#FFDAA9A9">
                     <GroupBox Header="Информация" HorizontalAlignment="Left" Height="200" VerticalAlignment="Top" Width="199" Margin="10,66,0,0">
                         <Grid>
-                            <Button Content="Сброс" HorizontalAlignment="Left" Margin="10,25,0,0" VerticalAlignment="Top" Width="167" Height="35" Click="Сброс_Click"/>
-                            <Button Content="О программе" HorizontalAlignment="Left" Margin="10,65,0,0" VerticalAlignment="Top" Width="167" Height="35" Click="Инфо_Click"/>
-                            <Button Content="Выход" HorizontalAlignment="Left" Margin="10,105,0,0" VerticalAlignment="Top" Width="167" Height="35" Click="Выход_Click"/>
+                            <Button Content="Сброс" HorizontalAlignment="Left" Margin="10,25,0,0" VerticalAlignment="Top" Width="167" Height="35" Click="Сброс_Click" Background="#FFFFD9D9"/>
+                            <Button Content="О программе" HorizontalAlignment="Left" Margin="10,65,0,0" VerticalAlignment="Top" Width="167" Height="35" Click="Инфо_Click" Background="#FFFFD9D9"/>
+                            <Button Content="Выход" HorizontalAlignment="Left" Margin="10,105,0,0" VerticalAlignment="Top" Width="167" Height="35" Click="Выход_Click" Background="#FFFFD9D9"/>
 
                         </Grid>
                     </GroupBox>
                 </Grid>
             </TabItem>
         </TabControl>
-        <Menu HorizontalAlignment="Left" Height="27" VerticalAlignment="Top" Width="229" Margin="0,5,0,0"/>
-        <StatusBar HorizontalAlignment="Left" Height="28" Margin="10,201,-3,0" VerticalAlignment="Top" Width="228" Grid.Row="1">
+        <Menu HorizontalAlignment="Left" Height="27" VerticalAlignment="Top" Width="229" Margin="0,5,0,0" Background="#FFDAA9A9"/>
+        <StatusBar HorizontalAlignment="Left" Height="28" Margin="10,201,-3,0" VerticalAlignment="Top" Width="228" Grid.Row="1" Background="#FFDAA9A9">
             <TextBlock TextWrapping="Wrap" VerticalAlignment="Top" Text="Вариант №1" Width="80" TextAlignment="Center"/>
             <Separator></Separator>
             <TextBlock x:Name="time" TextWrapping="Wrap" VerticalAlignment="Top" Width="37" TextAlignment="Center" />

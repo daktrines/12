@@ -4,9 +4,9 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:_12"
-        mc:Ignorable="d"
+        mc:Ignorable="d"  Loaded="Windows_Loaded"
         Title="12" Height="450" Width="249" ResizeMode="CanMinimize" Icon="burger_fast_food_icon_181517.ico">
-    <Grid HorizontalAlignment="Right" Width="229" Height="421" VerticalAlignment="Bottom" Margin="0,0,4,0">
+    <Grid HorizontalAlignment="Right" Width="235" Height="421" VerticalAlignment="Bottom" Margin="0,0,4,0">
         <Grid.RowDefinitions>
             <RowDefinition Height="96*"/>
             <RowDefinition Height="115*"/>
@@ -14,7 +14,7 @@
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <TabControl HorizontalAlignment="Left" Height="362" VerticalAlignment="Top" Width="219" Margin="10,32,0,0" Grid.RowSpan="2">
+        <TabControl HorizontalAlignment="Left" Height="362" VerticalAlignment="Top" Width="225" Margin="10,32,0,0" Grid.RowSpan="2">
             <TabItem Header="Задача 1">
                 <Grid Background="#FFE5E5E5" Margin="0,0,1,0">
                     <GroupBox Header="Исходные данные" HorizontalAlignment="Left" Height="134" Margin="10,10,0,0" VerticalAlignment="Top" Width="192">
@@ -55,8 +55,13 @@
                 <Grid Background="#FFE5E5E5"/>
             </TabItem>
         </TabControl>
-        <Menu HorizontalAlignment="Left" Height="27" VerticalAlignment="Top" Width="239" Margin="-10,5,0,0"/>
-        <StatusBar HorizontalAlignment="Left" Height="28" Margin="-10,201.5,0,0" VerticalAlignment="Top" Width="239" Grid.Row="1"/>
-
+        <Menu HorizontalAlignment="Left" Height="27" VerticalAlignment="Top" Width="229" Margin="0,5,0,0"/>
+        <StatusBar HorizontalAlignment="Left" Height="28" Margin="10,201,-3,0" VerticalAlignment="Top" Width="228" Grid.Row="1">
+            <TextBlock TextWrapping="Wrap" VerticalAlignment="Top" Text="Вариант №1" Width="80" TextAlignment="Center"/>
+            <Separator></Separator>
+            <TextBlock x:Name="time" TextWrapping="Wrap" VerticalAlignment="Top" Width="37" TextAlignment="Center" />
+            <Separator></Separator>
+            <TextBlock x:Name="date" TextWrapping="Wrap" VerticalAlignment="Top"  Width="82" TextAlignment="Center" />
+        </StatusBar>
     </Grid>
 </Window>

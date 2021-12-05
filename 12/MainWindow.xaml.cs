@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Windows.Threading;
 
 namespace _12
 {
@@ -24,7 +25,8 @@ namespace _12
         {
             InitializeComponent();
         }
-        
+
+        DispatcherTimer _timer;
 
         private void P_Click(object sender, RoutedEventArgs e)
         {
@@ -74,6 +76,20 @@ namespace _12
                 Desyatki.Text = Convert.ToString(rez);
             }
             else MessageBox.Show("Неверные данные!", "Ошибка");
+        }
+        private void Windows_Loaded(object sender, RoutedEventArgs e)
+        {
+            _timer = new DispatcherTimer();
+            _timer.Tick += Timer_Tick;
+            _timer.Interval = new TimeSpan(0, 0, 0, 1, 0);
+            _timer.IsEnabled = true;
+        }
+
+        private void Timer_Tick(object sender, EventArgs e)
+        {
+            DateTime d = DateTime.Now;
+            time.Text = d.ToString("HH:mm");
+            date.Text = d.ToString("dd.MM.yyyy");
         }
     }
     

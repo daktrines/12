@@ -28,34 +28,53 @@ namespace _12
 
         private void P_Click(object sender, RoutedEventArgs e)
         {
-            int rez;
-            int a = Convert.ToInt32(Zn1.Text);
-            Rez.P(a, out rez);
-            P.Text = Convert.ToString(rez);
+            //преобразования string в int
+            if (int.TryParse(Zn1.Text, out int a) && a > 0 )
+            {
+                int rez;
+                Rez.P(a, out rez);
+                P.Text = Convert.ToString(rez);
+            }
+            else MessageBox.Show("Неверные данные!", "Ошибка");
         }
 
         private void S_Click(object sender, RoutedEventArgs e)
         {
-            int rez;
-            int a = Convert.ToInt32(Zn1.Text);
-            Rez.S(a, out rez);
-            S.Text = Convert.ToString(rez);
+            //преобразования string в int
+            if (int.TryParse(Zn1.Text, out int a) && a > 0 )
+            {
+                int rez;
+                Rez.S(a, out rez);
+                S.Text = Convert.ToString(rez);
+            }
+            else MessageBox.Show("Неверные данные!", "Ошибка");
         }
+    
 
         private void Edinica_Click(object sender, RoutedEventArgs e)
         {
-            int rez;
-            int a = Convert.ToInt32(Zn2.Text);
-            Rez.Edinica(a, out rez);
-            Edinica.Text = Convert.ToString(rez);
+            //преобразования string в int
+            if (int.TryParse(Zn2.Text, out int a) && a > 99 && a < 1000)
+            {
+                int rez;
+                Rez.Edinica(a, out rez);
+                Edinica.Text = Convert.ToString(rez);
+            }
+            else MessageBox.Show("Неверные данные!", "Ошибка");
         }
+    
 
         private void Desyatki_Click(object sender, RoutedEventArgs e)
         {
-            int rez;
-            int a = Convert.ToInt32(Zn2.Text);
-            Rez.Desyatki(a, out rez);
-            Desyatki.Text = Convert.ToString(rez);
+            //преобразования string в int
+            if (int.TryParse(Zn2.Text, out int a) && a > 99 && a < 1000 )
+            {
+                int rez;
+                Rez.Desyatki(a, out rez);
+                Desyatki.Text = Convert.ToString(rez);
+            }
+            else MessageBox.Show("Неверные данные!", "Ошибка");
         }
     }
+    
 }

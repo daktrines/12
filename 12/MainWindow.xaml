@@ -34,12 +34,12 @@
                     <GroupBox Header="Исходные данные" HorizontalAlignment="Left" Height="134" Margin="10,10,0,0" VerticalAlignment="Top" Width="198">
                         <Grid >
                             <Label Content="Сторона квадрата" HorizontalAlignment="Left" Margin="10,20,0,0" VerticalAlignment="Top" Width="124"/>
-                            <TextBox x:Name="Zn1" HorizontalAlignment="Left" Height="23" Margin="10,51,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="166" TextChanged="Zn1_TextChanged" MaxLength="6"/>
+                            <TextBox x:Name="Zn1" HorizontalAlignment="Left" Height="23" Margin="10,51,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="166" TextChanged="Zn1_TextChanged" MaxLength="6" GotFocus="Zn1_GotFocus"/>
                         </Grid>
                     </GroupBox>
                     <GroupBox Header="Результат" HorizontalAlignment="Left" Height="174" Margin="10,149,0,0" VerticalAlignment="Top" Width="198">
                         <Grid >
-                            <Button Content="Расчитать P" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="166" Click="P_Click" Background="#FFFFD9D9"/>
+                            <Button x:Name="p" Content="Расчитать P" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="166" Click="P_Click" Background="#FFFFD9D9" IsDefault="True"/>
                             <Button Content="Расчитать S" HorizontalAlignment="Left" Margin="10,89,0,0" VerticalAlignment="Top" Width="166" Click="S_Click" Background="#FFFFD9D9"/>
                             <Button Content="↺" HorizontalAlignment="Left" Margin="65,63,0,0" VerticalAlignment="Top" Width="55" Height="21" Click="Сброс1_Click" Background="#FFFFD9D9"/>
                             <TextBox x:Name="P" IsReadOnly="True" HorizontalAlignment="Left" Height="23" Margin="10,35,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="166"/>
@@ -69,12 +69,12 @@
                     <GroupBox Header="Исходные данные" HorizontalAlignment="Left" Height="134" Margin="10,10,0,0" VerticalAlignment="Top" Width="199">
                         <Grid >
                             <Label Content="Трехзначное число" HorizontalAlignment="Left" Margin="10,20,0,0" VerticalAlignment="Top" Width="124"/>
-                            <TextBox x:Name="Zn2" HorizontalAlignment="Left" Height="23" Margin="10,51,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="167" TextChanged="Zn2_TextChanged" MaxLength="3"/>
+                            <TextBox x:Name="Zn2" HorizontalAlignment="Left" Height="23" Margin="10,51,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="167" TextChanged="Zn2_TextChanged" MaxLength="3" GotFocus="Zn2_GotFocus"/>
                         </Grid>
                     </GroupBox>
                     <GroupBox Header="Результат" HorizontalAlignment="Left" Height="174" Margin="10,149,0,0" VerticalAlignment="Top" Width="199">
                         <Grid >
-                            <Button Content="Последняя цифра" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="167" Click="Edinica_Click" Background="#FFFFD9D9"/>
+                            <Button x:Name="ПоследняяЦифра" Content="Последняя цифра" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="167" Click="Edinica_Click" Background="#FFFFD9D9" IsDefault="True"/>
                             <Button Content="Средняя цифра" HorizontalAlignment="Left" Margin="10,89,0,0" VerticalAlignment="Top" Width="167" Click="Desyatki_Click" Background="#FFFFD9D9"/>
                             <Button Content="↺" HorizontalAlignment="Left" Margin="69,63,0,0" VerticalAlignment="Top" Width="55" Height="21" Click="Сброс2_Click" Background="#FFFFD9D9"/>
                             <TextBox x:Name="Edinica" IsReadOnly="True" HorizontalAlignment="Left" Height="23" Margin="10,35,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="167"/>

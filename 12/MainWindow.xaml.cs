@@ -128,16 +128,30 @@ namespace _12
             Desyatki.Clear();
         }
 
+        //Когда изменяем текстбокс, очищает остальные текстбоксы
         private void Zn1_TextChanged(object sender, TextChangedEventArgs e)
         {
             P.Clear();
             S.Clear();
         }
 
+        //Когда изменяем текстбокс, очищает остальные текстбоксы
         private void Zn2_TextChanged(object sender, TextChangedEventArgs e)
         {
             Edinica.Clear();
             Desyatki.Clear();
+        }
+
+        //Передает фокус кнопке расчитать, если мы ставим курсор на текстбоксе
+        private void Zn1_GotFocus(object sender, RoutedEventArgs e)
+        {
+            p.IsDefault = true;
+        }
+
+       //Передает фокус кнопке расчитать, если мы ставим курсор на текстбоксе
+        private void Zn2_GotFocus(object sender, RoutedEventArgs e)
+        {
+            ПоследняяЦифра.IsDefault = true;
         }
     }
     

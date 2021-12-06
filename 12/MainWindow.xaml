@@ -58,7 +58,7 @@
                 </TabItem.Background>
                 <TabItem.ContextMenu>
                     <ContextMenu>
-                        <MenuItem  Header="Найи последнюю цифру" Icon="1" Click="Edinica_Click"/>
+                        <MenuItem  Header="Найти последнюю цифру" Icon="1" Click="Edinica_Click"/>
                         <MenuItem  Header="Найти среднюю цифру" Icon="2" Click="Desyatki_Click"/>
                         <Separator></Separator>
                         <MenuItem  Header="Сброс" Icon="3" Click="Сброс2_Click"/>

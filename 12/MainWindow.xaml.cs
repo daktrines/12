@@ -52,7 +52,7 @@ namespace _12
         private void Edinica_Click(object sender, RoutedEventArgs e)
         {
             //преобразования string в int
-            if (int.TryParse(Zn2.Text, out int a) && a > 99 && a < 1000)
+            if (int.TryParse(Zn2.Text, out int a) && a > 99 )
             {
                 Edinica.Text = Rez.Edinica(a).ToString();
             }
@@ -63,7 +63,7 @@ namespace _12
         private void Desyatki_Click(object sender, RoutedEventArgs e)
         {
             //преобразования string в int
-            if (int.TryParse(Zn2.Text, out int a) && a > 99 && a < 1000 )
+            if (int.TryParse(Zn2.Text, out int a) && a > 99 )
             {
                 Desyatki.Text = Rez.Desyatki(a).ToString();
             }

@@ -145,13 +145,13 @@ namespace _12
         //Передает фокус кнопке расчитать, если мы ставим курсор на текстбоксе
         private void Zn1_GotFocus(object sender, RoutedEventArgs e)
         {
-            p.IsDefault = true;
+            Pl.IsDefault = true;
         }
 
        //Передает фокус кнопке расчитать, если мы ставим курсор на текстбоксе
         private void Zn2_GotFocus(object sender, RoutedEventArgs e)
         {
-            ПоследняяЦифра.IsDefault = true;
+            Pc.IsDefault = true;
         }
     }
     

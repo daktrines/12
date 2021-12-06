@@ -8,21 +8,21 @@ namespace _12
 {
     class Rez
     {
-        public static void P(int a, out int rez)
+        public static int P(int a)
         {
-            rez = 4 * a;
+            return  4 * a;
         }
-        public static void S(int a, out int rez)
+        public static int S(int a)
         {
-            rez = a * a;
+            return a * a;
         }
-        public static void Edinica(int a, out int rez)
+        public static int Edinica(int a)
         {
-            rez = a % 10;
+            return a % 10;
         }
-        public static void Desyatki(int a, out int rez)
+        public static int Desyatki(int a)
         {
-            rez = a / 10 % 10;
+            return a / 10 % 10;
         }
 
     }

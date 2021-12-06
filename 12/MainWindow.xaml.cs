@@ -33,9 +33,7 @@ namespace _12
             //преобразования string в int
             if (int.TryParse(Zn1.Text, out int a) && a > 0 )
             {
-                int rez;
-                Rez.P(a, out rez);
-                P.Text = Convert.ToString(rez);
+                P.Text = Rez.P(a).ToString();
             }
             else MessageBox.Show("Неверные данные!", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
         }
@@ -45,9 +43,7 @@ namespace _12
             //преобразования string в int
             if (int.TryParse(Zn1.Text, out int a) && a > 0 )
             {
-                int rez;
-                Rez.S(a, out rez);
-                S.Text = Convert.ToString(rez);
+                S.Text = Rez.S(a).ToString();
             }
             else MessageBox.Show("Неверные данные!", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
         }
@@ -58,9 +54,7 @@ namespace _12
             //преобразования string в int
             if (int.TryParse(Zn2.Text, out int a) && a > 99 && a < 1000)
             {
-                int rez;
-                Rez.Edinica(a, out rez);
-                Edinica.Text = Convert.ToString(rez);
+                Edinica.Text = Rez.Edinica(a).ToString();
             }
             else MessageBox.Show("Неверные данные!", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
         }
@@ -71,9 +65,7 @@ namespace _12
             //преобразования string в int
             if (int.TryParse(Zn2.Text, out int a) && a > 99 && a < 1000 )
             {
-                int rez;
-                Rez.Desyatki(a, out rez);
-                Desyatki.Text = Convert.ToString(rez);
+                Desyatki.Text = Rez.Desyatki(a).ToString();
             }
             else MessageBox.Show("Неверные данные!", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
         }
